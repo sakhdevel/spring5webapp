@@ -10,6 +10,7 @@ public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String firstName;
     private String lastName;
 
@@ -23,6 +24,7 @@ public class Author {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
     public Long getId() {
         return id;
     }
