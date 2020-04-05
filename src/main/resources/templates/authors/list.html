@@ -7,10 +7,12 @@
 <body>
 <table>
     <tr>
+        <td>Id</td>
         <td>First name</td>
         <td>Last name</td>
     </tr>
     <tr th:each="author: ${authors}">
+        <td th:text="${author.id}">Id</td>
         <td th:text="${author.firstName}">First name</td>
         <td th:text="${author.lastName}">Last name</td>
     </tr>
